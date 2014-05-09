@@ -1,0 +1,21 @@
+.navbar-brand{
+	float:none;
+}
+.diva{
+	padding-top: 90px;
+	padding-left: 50px;
+	background: url(../img/IMG_8726.JPG) no-repeat top left,
+	url(../img/intro-bg.jpg) no-repeat top center scroll;
+}
+@media(max-width:320px) {
+
+	.diva{
+		background: url(../img/IMG_8727.JPG) no-repeat top center,
+		url(../img/intro-bg.jpg) no-repeat top center scroll;
+	}
+}
+@media(max-width:320px) {
+	.navbar {
+        background-color: transparent;
+    }
+}
