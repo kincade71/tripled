@@ -7,6 +7,19 @@
 	background: url(../img/IMG_8726.JPG) no-repeat top left,
 	url(../img/intro-bg.jpg) no-repeat top center scroll;
 }
+.dddintro{
+	background: url(../img/ddd.png) no-repeat center left;
+	background-size: cover;
+}
+.ddd{
+	border: #333 1px solid;	
+	border-radius: 5px;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+.ddd p{
+	color:#333;
+}
 @media(max-width:320px) {
 
 	.diva{
