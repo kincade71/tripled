@@ -52,8 +52,8 @@
 .diva{
 	padding-top: 90px;
 	padding-left: 50px;
-	background: url(../img/IMG_8726.JPG) no-repeat top left,
-	url(../img/intro-bg.jpg) no-repeat top center scroll;
+	background: url(../img/IMG_8726.JPG) no-repeat top left;
+     background-color: #610080;
 }
 .dddtitle{
 	font-family:'urban_jungleregular'; 
@@ -84,6 +84,121 @@
    -webkit-box-shadow: inset 0 0 5px #000000;
    box-shadow:         inset 0 0 5px #000000;
 }
+ #fadein2 {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+ #fadein5 {
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
+}
+ #fadein15 {
+    animation: fadein 15s;
+    -moz-animation: fadein 15s; /* Firefox */
+    -webkit-animation: fadein 15s; /* Safari and Chrome */
+    -o-animation: fadein 15s; /* Opera */
+}
+ #fadein10 {
+    animation: fadein 10s;
+    -moz-animation: fadein 10s; /* Firefox */
+    -webkit-animation: fadein 10s; /* Safari and Chrome */
+    -o-animation: fadein 10s; /* Opera */
+}
+ #fadeout5 {
+    animation: fadeout 5s;
+    -moz-animation: fadeout 5s; /* Firefox */
+    -webkit-animation: fadeout 5s; /* Safari and Chrome */
+    -o-animation: fadeout 5s; /* Opera */
+}
+#slideleft5{
+    position:relative;
+    animation:mymove 5s 1;
+    -webkit-animation:mymove 5s 1; /*Safari and Chrome*/
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+///
+@keyframes fadeout {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-moz-keyframes fadeout { /* Firefox */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-webkit-keyframes fadeout { /* Safari and Chrome */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-o-keyframes fadeout { /* Opera */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+///
+
+
+@keyframes mymove
+{
+from {left:0px;}
+to {left:50%;}
+}
+
+@-webkit-keyframes mymove /*Safari and Chrome*/
+{
+from {left:0px;}
+to {left:50%;}
+}
+
 @media(max-width:320px) {
 
 	.diva{
