@@ -9,7 +9,9 @@ class IndexController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('welcome');
+		$data = array();
+		$data['images'] = Feed::diva_images();
+		return View::make('welcome',$data);
 	}
 
 

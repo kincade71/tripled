@@ -24,21 +24,10 @@
         <div class="container"
             <div class="row mt">
                 <ul class="grid effect-2" id="grid">
-                    <li><a href="singleproject.html"><img src="img/portfolio/1.jpg"></a></li>
-                    <li><a href="singleproject.html"><img src="img/portfolio/3.jpg"></a></li>
-                    <li><a href="singleproject.html"><img src="img/portfolio/4.jpg"></a></li>
-                    <li><a href="singleproject.html"><img src="img/portfolio/12.png"></a></li>
-                    <li><a href="singleproject.html"><img src="img/portfolio/13.png"></a></li>
-                    <li><a href="singleproject.html"><img src="img/portfolio/10.png"></a></li>
-                    <li><a href="singleproject.html"><img src="img/portfolio/9.jpg"></a></li>
-                    <li><a href="singleproject.html"><img src="img/portfolio/2.jpg"></a></li>
-                    <li><a href="singleproject.html"><img src="img/portfolio/14.png"></a></li>
-                    <li><a href="singleproject.html"><img src="img/portfolio/5.jpg"></a></li>
-                    <li><a href="singleproject.html"><img src="img/portfolio/6.jpg"></a></li>
-                    <li><a href="singleproject.html"><img src="img/portfolio/7.jpg"></a></li>
-                    <li><a href="singleproject.html"><img src="img/portfolio/6.jpg"></a></li>
-                    <li><a href="singleproject.html"><img src="img/portfolio/9.jpg"></a></li>
-                    <li><a href="singleproject.html"><img src="img/portfolio/11.png"></a></li>
+            	<?php $i=0 ?>
+                  @foreach ($diva_approved['data'] as $imgs)
+					<li><img src="{{$imgs['images'][$i]['std_res']}}"></li>
+		          @endforeach
                 </ul>
             </div><!-- row -->
         </div><!-- container -->

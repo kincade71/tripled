@@ -9,7 +9,9 @@ class Diva_ApprovedController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('diva_approved');
+		$data = array();
+		$data['diva_approved'] = Feed::diva_approved();
+		return View::make('diva_approved',$data);
 	}
 
 

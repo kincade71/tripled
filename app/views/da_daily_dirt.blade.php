@@ -24,12 +24,12 @@
         <div class="row">
             <div class="col-md-12">&nbsp;</div>
         </div>
-
-        @foreach ($DDD as $posts)
+		
+        @foreach ($DDD['data'] as $posts)
             <div class="col-md-12 ddd ">
             <h2 class="dddlead ">{{$posts['title']}}</h2>
-            <p></p>
-            <span class="badge pull-right">Posted </span>
+            <p>{{$posts['text']}}</p>
+            <span class="badge pull-right">Posted {{$posts['pubDate']}}</span>
         </div>
         @endforeach
      </div>

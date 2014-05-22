@@ -36,7 +36,9 @@
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Gallery</h2>
-                    <p></p> 
+                    <p> @foreach ($images['data'] as $imgs)
+							<img src="{{$imgs['std_res']}}">
+		          		@endforeach</p> 
                 </div>
             </div>
         </div>
