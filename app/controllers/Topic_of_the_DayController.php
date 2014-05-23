@@ -1,15 +1,16 @@
 <?php
 
 class Topic_of_the_DayController extends \BaseController {
-
+	protected $layout = 'layouts.default';
 	/**
 	 * Display a listing of the resource.
 	 *
 	 * @return Response
 	 */
 	public function index()
-	{
-		return View::make('topic_of_the_day');
+	{	
+		$this->layout->title = "- Topic of the Day";
+   		$this->layout->content = View::make('topic_of_the_day');
 	}
 
 

@@ -348,10 +348,11 @@ body {
 }
 #about{
     color: #333;
-    background: url(../img/IMG_8729.JPG) no-repeat top right;
+    background: url(../img/Picture_216.jpg) no-repeat top right;
     background-color: #fff;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    background-size: contain;
-    -o-background-size: contain;
+    text-align: justify;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }

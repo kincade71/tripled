@@ -1,4 +1,3 @@
-@extends('layouts.default')
 @section('content')
      <section class="intro">
         <div class="intro-body ">
@@ -156,12 +155,51 @@
 </section>
 @stop
 @section('footer')
- <section class="content-section footer">
-            <div class="row">
-            <div class="col-lg-8">
-               
-            </div>
-        </div>
+ <section class="footer"><br/><br/>
+<div class="container">    
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Follow Diva</h5>
+        <ul class="list-unstyled">
+
+      </div>
+      <div class="col-md-3">
+        <h5>Follow Diva</h5>
+        <ul class="list-unstyled">
+
+      </div>
+      <div class="col-md-3">
+        <h5>Follow Diva</h5>
+        <ul class="list-unstyled list-inline">
+            <li> <a href="https://twitter.com/dominiquedadiva"> <i class="fa fa-twitter fa-5x"></i></a></li>
+            <li></li>
+            <li><a href="http://instagram.com/dominiquedadiva"><i class="fa fa-instagram fa-5x"></i></a></li>
+            <li></li>
+            <li><a href="https://www.facebook.com/dominique.dadiva"><i class="fa fa-facebook fa-5x"></i></a></li>
+        </ul>
+      </div>  
+    </div>
+  </div>
+</div>
+  <hr>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-md-8">
+     <!--   <a href="#">Terms of Service</a>    
+        <a href="#">Privacy</a>    
+        <a href="#">Security</a>-->
+      </div>
+      <div class="col-md-4">
+        <p class="muted pull-right">Powered by Jamedy Media Platform | Designed by <a href="http://webdmg.com" class="btn btn-primary">WEBDMG</a></p>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
 
     <!-- Core JavaScript Files -->

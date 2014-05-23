@@ -1,7 +1,7 @@
 <?php
 
 class IndexController extends \BaseController {
-
+	protected $layout = 'layouts.index';
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -11,7 +11,8 @@ class IndexController extends \BaseController {
 	{
 		$data = array();
 		$data['images'] = Feed::diva_images();
-		return View::make('welcome',$data);
+		$this->layout->title = "";
+   		$this->layout->content = View::make('welcome',$data);
 	}
 
 

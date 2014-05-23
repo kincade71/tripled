@@ -1,7 +1,7 @@
 <?php
 
 class Da_Daily_DirtController extends \BaseController {
-
+	protected $layout = 'layouts.default';
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -11,7 +11,8 @@ class Da_Daily_DirtController extends \BaseController {
 	{	
 		$data = array();
 		$data['DDD'] = Feed::DDD();
-		return View::make('da_daily_dirt',$data);
+		$this->layout->title = "- Da Daily Dirt";
+   		$this->layout->content = View::make('da_daily_dirt',$data);
 	}
 
 

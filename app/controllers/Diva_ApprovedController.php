@@ -1,7 +1,7 @@
 <?php
 
 class Diva_ApprovedController extends \BaseController {
-
+	protected $layout = 'layouts.default';
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -11,7 +11,8 @@ class Diva_ApprovedController extends \BaseController {
 	{
 		$data = array();
 		$data['diva_approved'] = Feed::diva_approved();
-		return View::make('diva_approved',$data);
+		$this->layout->title = "- Diva Approved";
+   		$this->layout->content = View::make('diva_approved',$data);
 	}
 
 
