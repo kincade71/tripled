@@ -107,7 +107,7 @@
         <a href="#">Security</a>-->
       </div>
       <div class="col-md-4">
-        <p class="muted pull-right">Powered by Jamedy Media Platform | Designed by <a href="http://webdmg.com" class="btn btn-primary">WEBDMG</a></p>
+        <p class="muted pull-right">Powered by <img src="img/jamedy.png" height="50"> Media Platform | Designed by <a href="http://webdmg.com" class="btn btn-primary">WEBDMG</a></p>
       </div>
     </div>
   </div>
