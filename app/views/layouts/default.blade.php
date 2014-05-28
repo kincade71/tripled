@@ -80,6 +80,12 @@
                     <li class="page-scroll">
                         {{link_to("/Diva_Approved/",'Diva Approved')}}
                     </li>
+                    <li class="page-scroll">
+                        {{link_to("/Events/",'Events')}}
+                    </li>
+                    <li class="page-scroll">
+                        {{link_to("/Diva_Wall/",'Diva Wall')}}
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

@@ -36,6 +36,8 @@
     {{ HTML::style('css/grayscale.css'); }}
     {{ HTML::style('css/jmp.css'); }}
     {{ HTML::style('slick/slick.css'); }}
+    {{ HTML::style('lightbox/css/lightbox.css'); }}
+    
    
 </head>
 
@@ -76,6 +78,12 @@
                     </li>
                     <li class="page-scroll">
                         {{link_to("/Diva_Approved/",'Diva Approved')}}
+                    </li>
+                    <li class="page-scroll">
+                        {{link_to("/Events/",'Events')}}
+                    </li>
+                    <li class="page-scroll">
+                        {{link_to("/Diva_Wall/",'Diva Wall')}}
                     </li>
                 </ul>
             </div>

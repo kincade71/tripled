@@ -4,12 +4,11 @@
             <div class="container">
                 <div class="row ">
                     <div class="col-md-12">
-                        <h1 id="" class="nostyle" style="color:#fff;">Diva Approved<sup><img src="img/kiss.png" id="fadein5" class="" height="45px"></sup></h1><hr class="nostyle"/>
-                        <h4 style="color:#fff;">Sealed with a Kiss</div>
+                        
                     </div>
-                                        <br><br><br>
+                    <br><br><br>
                     <div class="page-scroll">
-                        <a href="#da" class="btn btn-circle">
+                        <a href="#totd" class="btn btn-circle">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
@@ -17,23 +16,7 @@
             </div>
         </div>
     </section>
-    <section id="da" class="content-section">
-    <!-- PORTFOLIO SECTION -->
-    <div id="portfolio">
-        <div class="container"
-            <div class="row mt">
-                <ul class="grid effect-2" id="grid">
-            	<?php $i=0 ?>
-              @if (count($diva_approved['data'])>0)
-                @foreach ($diva_approved['data'] as $imgs)
-                  <li><img src="{{$imgs['images'][$i]['std_res']}}"><!--<p style="color:#333;">{{$imgs['text']}}</p>--></li>
-                @endforeach
-              @endif
-                </ul>
-            </div><!-- row -->
-        </div><!-- container -->
-    </div><!-- portfolio -->
-    </section>
+     
 @stop
 @section('footer')
 <section class="footer"><br/><br/>
@@ -114,7 +97,6 @@
 
     <!-- Custom Theme JavaScript -->
     {{ HTML::script('js/grayscale.js'); }}
-        <!-- Custom Theme JavaScript -->
     {{ HTML::script('js/grayscale.js'); }}
     {{ HTML::script('js/main.js'); }}
     {{ HTML::script('js/masonry.pkgd.min.js'); }}
@@ -128,5 +110,20 @@
             viewportFactor : 0.2
         } );
     </script>
+    <script>
+    $(document).ready(function(){
+    var my_posts = $("[rel=tooltip]");
+    for(i=0;i<my_posts.length;i++){
+        the_post = $(my_posts[i]);
+        if(the_post.hasClass('invert')){
+            the_post.tooltip({ placement: 'left'});
+            the_post.css("cursor","pointer");
+        }else{
+            the_post.tooltip({ placement: 'rigt'});
+            the_post.css("cursor","pointer");
+        }
+    }
+});
+     </script>
 @stop
 

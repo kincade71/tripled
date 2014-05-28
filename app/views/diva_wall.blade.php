@@ -4,12 +4,11 @@
             <div class="container">
                 <div class="row ">
                     <div class="col-md-12">
-                        <h1 id="" class="nostyle" style="color:#fff;">Diva Approved<sup><img src="img/kiss.png" id="fadein5" class="" height="45px"></sup></h1><hr class="nostyle"/>
-                        <h4 style="color:#fff;">Sealed with a Kiss</div>
+                        
                     </div>
-                                        <br><br><br>
+                    <br><br><br>
                     <div class="page-scroll">
-                        <a href="#da" class="btn btn-circle">
+                        <a href="#totd" class="btn btn-circle">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
@@ -17,23 +16,7 @@
             </div>
         </div>
     </section>
-    <section id="da" class="content-section">
-    <!-- PORTFOLIO SECTION -->
-    <div id="portfolio">
-        <div class="container"
-            <div class="row mt">
-                <ul class="grid effect-2" id="grid">
-            	<?php $i=0 ?>
-              @if (count($diva_approved['data'])>0)
-                @foreach ($diva_approved['data'] as $imgs)
-                  <li><img src="{{$imgs['images'][$i]['std_res']}}"><!--<p style="color:#333;">{{$imgs['text']}}</p>--></li>
-                @endforeach
-              @endif
-                </ul>
-            </div><!-- row -->
-        </div><!-- container -->
-    </div><!-- portfolio -->
-    </section>
+   
 @stop
 @section('footer')
 <section class="footer"><br/><br/>
@@ -114,19 +97,51 @@
 
     <!-- Custom Theme JavaScript -->
     {{ HTML::script('js/grayscale.js'); }}
-        <!-- Custom Theme JavaScript -->
-    {{ HTML::script('js/grayscale.js'); }}
-    {{ HTML::script('js/main.js'); }}
-    {{ HTML::script('js/masonry.pkgd.min.js'); }}
-    {{ HTML::script('js/imagesloaded.js'); }}
-    {{ HTML::script('js/classie.js'); }}
-    {{ HTML::script('js/AnimOnScroll.js'); }}
-    <script>
-        new AnimOnScroll( document.getElementById( 'grid' ), {
-            minDuration : 0.4,
-            maxDuration : 0.7,
-            viewportFactor : 0.2
-        } );
+    
+    <!-- slick -->
+    {{ HTML::script('slick/slick.min.js'); }}
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.Gallery').slick({
+
+  autoplay: true,
+  autoplaySpeed: 2000,
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true,
+        autoplay: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        autoplay: true
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true
+      }
+    }
+  ]
+            });
+        });
     </script>
+    {{ HTML::script('lightbox/js/lightbox.min.js'); }}
 @stop
 

@@ -14,3 +14,5 @@ Route::get('/','IndexController@index');
 Route::get('/Da_Daily_Dirt/','Da_Daily_DirtController@index');
 Route::get('/Topic_of_the_Day/','Topic_of_the_DayController@index');
 Route::get('/Diva_Approved/','Diva_ApprovedController@index');
+Route::get('/Diva_Wall/','DivasController@index');
+Route::get('/Events/','EventsController@index');
