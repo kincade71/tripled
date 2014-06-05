@@ -26,10 +26,14 @@
     </section>
      <section id="totd" class="content-section ">
 <div class="container">
+  <div class="row text-center">
+    <img src="{{$totd}}"/>
+  </div>
     <div class="page-header text-center">
         <h1 id="timeline">Topic of the day comment timeline</h1>
     </div>
-    <ul class="timeline">
+    
+    <ul class="timeline" style="color:#333;">
         <li>
           <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
           <div class="timeline-panel">

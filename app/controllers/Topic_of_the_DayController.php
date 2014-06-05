@@ -5,12 +5,15 @@ class Topic_of_the_DayController extends \BaseController {
 	/**
 	 * Display a listing of the resource.
 	 *
-	 * @return Response
+	 * @return Response date('Y-m-d',time())
 	 */
 	public function index()
-	{	
+	{			
+		$data = array();
+		$data['totd'] = Feed::diva_totd('2014-06-04');
+		$data['comments'] = Feed::diva_totd_comments();
 		$this->layout->title = "- Topic of the Day";
-   		$this->layout->content = View::make('topic_of_the_day');
+   		$this->layout->content = View::make('topic_of_the_day',$data);
 	}
 
 

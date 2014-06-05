@@ -1,6 +1,6 @@
 <?php
 
-class EventsController extends \BaseController {
+class IntroController extends \BaseController {
 	protected $layout = 'layouts.default';
 	/**
 	 * Display a listing of the resource.
@@ -10,9 +10,9 @@ class EventsController extends \BaseController {
 	public function index()
 	{
 		$data = array();
-		$data['events'] = Feed::diva_events();
-		$this->layout->title = " - Where the party is!!";
-   		$this->layout->content = View::make('events',$data);
+		$data['video'] = Feed::diva_intro_video();
+		$this->layout->title = "";
+   		$this->layout->content = View::make('intro',$data);
 	}
 
 

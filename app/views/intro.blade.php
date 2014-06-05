@@ -1,41 +1,25 @@
 @section('content')
-<section class="intro dddintro ">
+    <section style="height:650px;">
         <div class="intro-body ">
             <div class="container">
-                <div class="row "><br/><br/><br/><br><br>
-                    <div class="col-md-12">
-                        <h1 id="fadein5" class="nostyle dddtitle" style="color:#fff;">The Daily Dirt</h1><hr class="nostyle">
-                        <h4 id="fadein15" class="" >news you care about</div>
-                    </div>
-                    <br><br><br>
-                    <div class="page-scroll">
-                        <a href="#ddd" class="btn btn-circle">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+                <div class="row "> 
+                    <div class="col-md-12 ">
+                        <video autoplay muted id="bgvid" >
+                          <source src="{{$video}}" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="content-section">
-     <div id="ddd" class="container" style="color:#333;">
-		  @if (count($DDD['data'])>0)
-
-        @foreach ($DDD['data'] as $posts)
-            <div class="col-md-12 ddd ">
-            <h2 class="dddlead "><a href="https://www.google.com/?#q={{$posts['title']}}" target="_blank" style="color:#333">{{$posts['title']}}</a></h2>
-            <p>{{trim(str_replace('PHOTO:TMZ.COM','',str_replace('photo: GETTY IMAGES','',$posts['text'])))}}</p>
-            <span class="badge pull-right" style="background-color:#610080">Posted {{$posts['pubDate']}}</span>
-        </div>
-        @endforeach
-      @endif
-     </div>
-    </section>
+{{link_to("/Home",'Skip >>>',array('class'=>'btn btn-primary btn-lg pull-right'))}}
+   <br/><br/><br/><br/><br/><br/>
 
 @stop
 @section('footer')
-<section class="footer"><br/><br/>
+<section class="footer" style="background-color:#fff;"><br/><br/>
 <div class="container">    
   <div class="row">
     <div class="col-lg-12 darken">
@@ -52,13 +36,13 @@
                 <a href="#page-top"></a>
             </li>
             <li class="page-scroll visible-lg">
-                <a href="/#about">Bio</a>
+                <a href="#about">Bio</a>
             </li>
             <li class="page-scroll visible-lg">
-                <a href="/#download">Diva Pics</a>
+                <a href="#download">Diva Pics</a>
             </li>
             <li class="page-scroll">
-                <a href="/#contact">Follow Diva</a>
+                <a href="#contact">Follow Diva</a>
             </li>
 
             <li class="page-scroll">
@@ -99,30 +83,26 @@
   <div class="row">
     <div class="col-lg-12">
       <div class="col-md-4 pull-right">
-        <p class="muted pull-right">Powered by <img src="img/jamedy.png" height="35"> Media Platform | Designed by <a href="http://webdmg.com" class="btn btn-primary">WEBDMG</a></p>
+        <p class="muted pull-right">Powered by <img src="img/jamedy.png" height="25"> Media Platform | Designed by <a href="http://webdmg.com" class="btn btn-primary">WEBDMG</a></p>
       </div>
     </div>
   </div>
 </div>
 </section>
+
     <!-- Core JavaScript Files -->
-    {{ HTML::script('https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'); }}
+    {{ HTML::script('https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'); }}
+    {{ HTML::script('lightbox/js/lightbox.min.js'); }}
     {{ HTML::script('http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js'); }}
     {{ HTML::script('http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'); }}
 
-    <!-- Custom Theme JavaScript -->
-    {{ HTML::script('js/grayscale.js'); }}
-    {{ HTML::script('js/main.js'); }}
-    {{ HTML::script('js/masonry.pkgd.min.js'); }}
-    {{ HTML::script('js/imagesloaded.js'); }}
-    {{ HTML::script('js/classie.js'); }}
-    {{ HTML::script('js/AnimOnScroll.js'); }}
-    <script>
-        new AnimOnScroll( document.getElementById( 'grid' ), {
-            minDuration : 0.4,
-            maxDuration : 0.7,
-            viewportFactor : 0.2
-        } );
-    </script>
+    
+   <script type='text/javascript'>
+    document.getElementById('bgvid').addEventListener('ended',myHandler,false);
+    function myHandler(e) {
+        if(!e) { e = window.event; }
+        window.location = '\Home';
+    }
+</script>
 @stop
 

@@ -16,7 +16,24 @@
             </div>
         </div>
     </section>
-     
+     <section id="da" class="content-section">
+    <!-- PORTFOLIO SECTION -->
+    <div id="portfolio">
+        <div class="container"
+            <div class="row mt">
+                <ul class="grid effect-2" id="grid">
+                <?php $i=0 ?>
+              @if (count($events['data'])>0)
+                @foreach ($events['data'] as $imgs)
+                  <li style="border:#333 solid 1px;"><a href="{{$imgs['images'][$i]['std_res']}}" title="{{str_replace('#events','',$imgs['text'])}}" data-lightbox="divaapproved">
+                    <img src="{{$imgs['images'][$i]['std_res']}}"><p style="color:#333;">{{str_replace('#events','',$imgs['text'])}}</p></a></li>
+                @endforeach
+              @endif
+                </ul>
+            </div><!-- row -->
+        </div><!-- container -->
+    </div><!-- portfolio -->
+    </section>
 @stop
 @section('footer')
 <section class="footer"><br/><br/>
@@ -94,7 +111,7 @@
     {{ HTML::script('https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'); }}
     {{ HTML::script('http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js'); }}
     {{ HTML::script('http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'); }}
-
+    {{ HTML::script('lightbox/js/lightbox.min.js'); }}
     <!-- Custom Theme JavaScript -->
     {{ HTML::script('js/grayscale.js'); }}
     {{ HTML::script('js/grayscale.js'); }}

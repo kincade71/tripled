@@ -50,8 +50,8 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="/">
-                    <!--<i style="color:#610080;" class="fa fa-play-circle"></i>--><span class="light" style="color:#610080;"><img src="img/logo.png" height="48px"></span>
+                <a class="navbar-brand" href="/Home">
+                   <span class="light" style="color:#610080;"><img src="img/logo.png" height="48px"></span>
                 </a>
             </div>
 
@@ -63,13 +63,13 @@
                         <a href="/"></a>
                     </li>
                     <li class="page-scroll visible-lg">
-                        <a href="/#about">Bio</a>
+                        <a href="/Home#about">Bio</a>
                     </li>
                     <li class="page-scroll visible-lg">
-                        <a href="/#download">Diva Pics</a>
+                        <a href="/Home#download">Diva Pics</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="/#contact">Follow Diva</a>
+                        <a href="/Home#contact">Follow Diva</a>
                     </li>
                     <li class="page-scroll">
                         {{link_to("/Da_Daily_Dirt/",'Da Daily Dirt')}}
@@ -83,8 +83,8 @@
                     <li class="page-scroll">
                         {{link_to("/Events/",'Events')}}
                     </li>
-                    <li class="page-scroll">
-                        {{link_to("/Diva_Wall/",'Diva Wall')}}
+                    <li >
+                        {{link_to("#",'Diva Wall',array('data-toggle'=>'modal','data-target'=>'#myModal'))}}
                     </li>
                 </ul>
             </div>
@@ -92,6 +92,26 @@
         </div>
         <!-- /.container -->
     </nav>
+    <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
         @yield('content')
 
         @yield('footer')

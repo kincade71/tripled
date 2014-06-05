@@ -82,8 +82,8 @@
                     <li class="page-scroll">
                         {{link_to("/Events/",'Events')}}
                     </li>
-                    <li class="page-scroll">
-                        {{link_to("/Diva_Wall/",'Diva Wall')}}
+                    <li >
+                        {{link_to("javascript:void()",'Diva Wall',array('data-toggle'=>'modal','data-target'=>'#myModal'))}}
                     </li>
                 </ul>
             </div>
@@ -91,6 +91,25 @@
         </div>
         <!-- /.container -->
     </nav>
+
+    <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>  
         @yield('content')
 
         @yield('footer')

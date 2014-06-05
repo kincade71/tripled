@@ -42,6 +42,20 @@
     font-style: normal;
 
 }
+video#bgvid {
+position: fixed;
+top:0px;
+right: 0; 
+bottom: 0;
+min-width: 100%; 
+min-height: 100%;
+width: auto; 
+height: auto; 
+z-index: -100;
+background: url(polina.jpg) no-repeat;
+background-size: cover;
+}
+
 .twitter:hover{
 
 }
