@@ -11,7 +11,7 @@ class Topic_of_the_DayController extends \BaseController {
 	{			
 		$data = array();
 		$data['totd'] = Feed::diva_totd('2014-06-04');
-		$data['comments'] = Feed::diva_totd_comments();
+		$data['comments'] = Feed::diva_totd_comments('2014-06-04');
 		$this->layout->title = "- Topic of the Day";
    		$this->layout->content = View::make('topic_of_the_day',$data);
 	}
