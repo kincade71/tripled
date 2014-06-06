@@ -42,7 +42,7 @@
     
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+<body >
 
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -71,20 +71,20 @@
                     <li class="page-scroll">
                         <a href="/Home#contact">Follow Diva</a>
                     </li>
-                    <li class="page-scroll">
+                    <li class="page-scroll {{$Da_Daily_Dirt}}">
                         {{link_to("/Da_Daily_Dirt/",'Da Daily Dirt')}}
                     </li>
-                    <li class="page-scroll">
+                    <li class="page-scroll {{$Topic_of_the_Day}}">
                         {{link_to("/Topic_of_the_Day/",'TotD')}}
                     </li>
-                    <li class="page-scroll">
+                    <li class="page-scroll {{$Diva_Approved}}">
                         {{link_to("/Diva_Approved/",'Diva Approved')}}
                     </li>
-                    <li class="page-scroll">
+                    <li class="page-scroll {{$Events}}">
                         {{link_to("/Events/",'Events')}}
                     </li>
-                    <li >
-                        {{link_to("#",'Diva Wall',array('data-toggle'=>'modal','data-target'=>'#myModal'))}}
+                    <li class="page-scroll">
+                        <a href="/dddd" data-toggle="modal" data-target="#myModal">Diva Wall</a>
                     </li>
                 </ul>
             </div>

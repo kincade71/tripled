@@ -11,6 +11,10 @@ class Da_Daily_DirtController extends \BaseController {
 	{	
 		$data = array();
 		$data['DDD'] = Feed::DDD();
+		$this->layout->Da_Daily_Dirt = 'active';
+		$this->layout->Topic_of_the_Day = null;
+		$this->layout->Diva_Approved = null;
+		$this->layout->Events = null;
 		$this->layout->title = "- Da Daily Dirt";
    		$this->layout->content = View::make('da_daily_dirt',$data);
 	}

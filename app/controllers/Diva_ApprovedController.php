@@ -11,6 +11,10 @@ class Diva_ApprovedController extends \BaseController {
 	{
 		$data = array();
 		$data['diva_approved'] = Feed::diva_approved();
+		$this->layout->Da_Daily_Dirt = null;
+		$this->layout->Topic_of_the_Day = null;
+		$this->layout->Diva_Approved = 'active';
+		$this->layout->Events = null;
 		$this->layout->title = "- Diva Approved";
    		$this->layout->content = View::make('diva_approved',$data);
 	}

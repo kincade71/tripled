@@ -116,18 +116,18 @@ background-size: cover;
 .dddlead{
 	font-family:'chunkfiveroman'; 
 	font-weight: bold;
-	font-size: 32px;
+	font-size: 22px;
 }
-.dddintro{
+.dddint{
 	background: url(../img/ddd.png) no-repeat center left;
 	background-size: cover;
 	    background-color: #610080;
 }
 .ddd{
-	border-bottom: #333 4px dotted;	
+	border-bottom: #333 4px solid;	
 	border-radius: 15px;
 	padding: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 }
 .ddd p{
 	color:#333;

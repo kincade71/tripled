@@ -11,7 +11,11 @@ class EventsController extends \BaseController {
 	{
 		$data = array();
 		$data['events'] = Feed::diva_events();
-		$this->layout->title = " - Where the party is!!";
+		$this->layout->Da_Daily_Dirt = null;
+		$this->layout->Topic_of_the_Day = null;
+		$this->layout->Diva_Approved = null;
+		$this->layout->Events = 'active';
+		$this->layout->title = " - Events";
    		$this->layout->content = View::make('events',$data);
 	}
 

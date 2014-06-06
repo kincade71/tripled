@@ -93,15 +93,20 @@
             <li></li>
             <li><a href="https://www.facebook.com/dominique.dadiva"><i class="fa fa-facebook fa-5x"></i></a></li>
         </ul>
+        <hr/>
+        <p class="nostyle"><span>Hosting and event inquiries:</span><a href="mailto:email">email</a></p>
       </div>  
     </div>
   </div>
 </div>
-  <hr>
+<hr>
   <div class="row">
-    <div class="col-lg-12">
-      <div class="col-md-4 pull-right">
-        <p class="muted pull-right">Powered by <img src="img/jamedy.png" height="35"> Media Platform | Designed by <a href="http://webdmg.com" class="btn btn-primary">WEBDMG</a></p>
+    <div class="col-lg-12 darken">
+      <div class="col-md-6 pull-left ">
+        <p class="muted pull-left">Powered by <img src="img/jamedy.png" height="45"> Media Platform </p>
+      </div>
+      <div class="col-md-6 pull-right">
+        <p class="muted pull-right">Designed by <a href="http://webdmg.com" style="font-weight:bold">WEBDMG</a></p>
       </div>
     </div>
   </div>

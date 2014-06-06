@@ -11,7 +11,11 @@ class IntroController extends \BaseController {
 	{
 		$data = array();
 		$data['video'] = Feed::diva_intro_video();
-		$this->layout->title = "";
+		$this->layout->Da_Daily_Dirt = null;
+		$this->layout->Topic_of_the_Day = null;
+		$this->layout->Diva_Approved = null;
+		$this->layout->Events = null;
+		$this->layout->title = null;
    		$this->layout->content = View::make('intro',$data);
 	}
 

@@ -4,11 +4,15 @@
             <div class="container">
                 <div class="row ">
                     <div class="col-md-12">
-                        
+                        <h1 id="" class="nostyle" style="color:#fff;">Events </h1>
+                        <hr class="nostyle"/>
+                        <h4 style="color:#fff;"></div>
+                    </div>
+                        <br><br><br> 
                     </div>
                     <br><br><br>
                     <div class="page-scroll">
-                        <a href="#totd" class="btn btn-circle">
+                        <a href="#events" class="btn btn-circle">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
@@ -16,23 +20,23 @@
             </div>
         </div>
     </section>
-     <section id="da" class="content-section">
-    <!-- PORTFOLIO SECTION -->
-    <div id="portfolio">
-        <div class="container"
-            <div class="row mt">
-                <ul class="grid effect-2" id="grid">
-                <?php $i=0 ?>
-              @if (count($events['data'])>0)
-                @foreach ($events['data'] as $imgs)
-                  <li style="border:#333 solid 1px;"><a href="{{$imgs['images'][$i]['std_res']}}" title="{{str_replace('#events','',$imgs['text'])}}" data-lightbox="divaapproved">
-                    <img src="{{$imgs['images'][$i]['std_res']}}"><p style="color:#333;">{{str_replace('#events','',$imgs['text'])}}</p></a></li>
-                @endforeach
-              @endif
-                </ul>
-            </div><!-- row -->
-        </div><!-- container -->
-    </div><!-- portfolio -->
+     <section id="events" class="content-section">
+        <!-- PORTFOLIO SECTION -->
+        <div id="portfolio">
+            <div class="container"
+                <div class="row mt">
+                    <ul class="grid effect-3" id="grid">
+                      <?php $i=0 ?>
+                      @if (count($events['data'])>0)
+                        @foreach ($events['data'] as $imgs)
+                          <li style="border:#333 solid 1px;"><a href="{{$imgs['images'][$i]['std_res']}}" title="{{str_replace('#events','',$imgs['text'])}}" data-lightbox="divaapproved">
+                            <img src="{{$imgs['images'][$i]['std_res']}}"><p style="color:#333;">{{str_replace('#events','',$imgs['text'])}}</p></a></li>
+                        @endforeach
+                      @endif
+                    </ul>
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- portfolio -->
     </section>
 @stop
 @section('footer')
@@ -92,15 +96,20 @@
             <li></li>
             <li><a href="https://www.facebook.com/dominique.dadiva"><i class="fa fa-facebook fa-5x"></i></a></li>
         </ul>
+        <hr/>
+        <p class="nostyle"><span>Hosting and event inquiries:</span><a href="mailto:email">email</a></p>
       </div>  
     </div>
   </div>
 </div>
-  <hr>
+<hr>
   <div class="row">
-    <div class="col-lg-12">
-      <div class="col-md-4 pull-right">
-        <p class="muted pull-right">Powered by <img src="img/jamedy.png" height="35"> Media Platform | Designed by <a href="http://webdmg.com" class="btn btn-primary">WEBDMG</a></p>
+    <div class="col-lg-12 darken">
+      <div class="col-md-6 pull-left ">
+        <p class="muted pull-left">Powered by <img src="img/jamedy.png" height="45"> Media Platform </p>
+      </div>
+      <div class="col-md-6 pull-right">
+        <p class="muted pull-right">Designed by <a href="http://webdmg.com" style="font-weight:bold">WEBDMG</a></p>
       </div>
     </div>
   </div>

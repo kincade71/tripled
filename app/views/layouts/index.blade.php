@@ -82,8 +82,8 @@
                     <li class="page-scroll">
                         {{link_to("/Events/",'Events')}}
                     </li>
-                    <li >
-                        {{link_to("javascript:void()",'Diva Wall',array('data-toggle'=>'modal','data-target'=>'#myModal'))}}
+                    <li class="page-scroll">
+                        <a href="/dddd" data-toggle="modal" data-target="#myModal">Diva Wall</a>
                     </li>
                 </ul>
             </div>

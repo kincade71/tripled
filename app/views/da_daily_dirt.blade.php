@@ -1,11 +1,11 @@
 @section('content')
-<section class="intro dddintro ">
+<section class="intro dddint ">
         <div class="intro-body ">
             <div class="container">
                 <div class="row "><br/><br/><br/><br><br>
                     <div class="col-md-12">
                         <h1 id="fadein5" class="nostyle dddtitle" style="color:#fff;">The Daily Dirt</h1><hr class="nostyle">
-                        <h4 id="fadein15" class="" >news you care about</div>
+                        <h4 id="fadein15" class="" style="color:#fff;">news you care about</div>
                     </div>
                     <br><br><br>
                     <div class="page-scroll">
@@ -17,20 +17,29 @@
             </div>
         </div>
     </section>
-
-    <section class="content-section">
-     <div id="ddd" class="container" style="color:#333;">
-		  @if (count($DDD['data'])>0)
-
-        @foreach ($DDD['data'] as $posts)
-            <div class="col-md-12 ddd ">
-            <h2 class="dddlead "><a href="https://www.google.com/?#q={{$posts['title']}}" target="_blank" style="color:#333">{{$posts['title']}}</a></h2>
-            <p>{{trim(str_replace('PHOTO:TMZ.COM','',str_replace('photo: GETTY IMAGES','',$posts['text'])))}}</p>
-            <span class="badge pull-right" style="background-color:#610080">Posted {{$posts['pubDate']}}</span>
-        </div>
-        @endforeach
-      @endif
-     </div>
+    <section id="ddd" class="content-section">
+    <!-- PORTFOLIO SECTION -->
+    <div id="portfolio">
+        <div class="container"
+            <div class="row mt">
+                <ul class="grid effect-6" id="grid">
+               @if (count($DDD['data'])>0)
+                @foreach ($DDD['data'] as $posts)
+                  @if(strlen($posts['text'])>17)
+                      <li>
+                        <div class="col-md-12 ddd ">
+                        <h3>{{$posts['title']}}</h3>
+                        <p>{{trim(str_replace('PHOTO:TMZ.COM','',str_replace('photo: GETTY IMAGES','',$posts['text'])))}}</p>
+                        <span class="badge pull-right" style="background-color:#610080">Posted {{$posts['pubDate']}}</span>
+                        </div>
+                      </li>
+                  @endif
+                @endforeach
+              @endif
+                </ul>
+            </div><!-- row -->
+        </div><!-- container -->
+    </div><!-- portfolio -->
     </section>
 
 @stop
@@ -91,15 +100,20 @@
             <li></li>
             <li><a href="https://www.facebook.com/dominique.dadiva"><i class="fa fa-facebook fa-5x"></i></a></li>
         </ul>
+        <hr/>
+        <p class="nostyle"><span>Hosting and event inquiries:</span><a href="mailto:email">email</a></p>
       </div>  
     </div>
   </div>
 </div>
   <hr>
   <div class="row">
-    <div class="col-lg-12">
-      <div class="col-md-4 pull-right">
-        <p class="muted pull-right">Powered by <img src="img/jamedy.png" height="35"> Media Platform | Designed by <a href="http://webdmg.com" class="btn btn-primary">WEBDMG</a></p>
+    <div class="col-lg-12 darken">
+      <div class="col-md-6 pull-left ">
+        <p class="muted pull-left">Powered by <img src="img/jamedy.png" height="45"> Media Platform </p>
+      </div>
+      <div class="col-md-6 pull-right">
+        <p class="muted pull-right">Designed by <a href="http://webdmg.com" style="font-weight:bold">WEBDMG</a></p>
       </div>
     </div>
   </div>
