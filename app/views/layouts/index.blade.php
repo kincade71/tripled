@@ -99,7 +99,7 @@
         </div>
     </div>
     <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="color:#333">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -107,7 +107,26 @@
         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
       <div class="modal-body">
-        ...
+		<div class="form-group">
+	    	<label for="exampleInputEmail1">First Name</label>
+	    	<input type="email" class="form-control" id="exampleInputEmail1" placeholder="First Name">
+	  	</div>
+	  	<div class="form-group">
+	    	<label for="exampleInputEmail1">Last Name</label>
+	    	<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Last Name">
+	  	</div>
+	  	
+	  	<div class="form-group">
+	    	<label for="exampleInputEmail1">Email</label>
+	    	<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+	  	</div>
+		<select class="form-control">
+		  <option>1</option>
+		  <option>2</option>
+		  <option>3</option>
+		  <option>4</option>
+		  <option>5</option>
+		</select>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
