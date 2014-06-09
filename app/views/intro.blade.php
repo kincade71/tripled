@@ -101,13 +101,27 @@
     {{ HTML::script('http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js'); }}
     {{ HTML::script('http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'); }}
 
-    
+
    <script type='text/javascript'>
     document.getElementById('bgvid').addEventListener('ended',myHandler,false);
     function myHandler(e) {
         if(!e) { e = window.event; }
         window.location = '\Home';
     }
-</script>
+    </script>
+        <script type='text/javascript' async>
+      // For the time now
+        $('#onair').hide();
+        Date.prototype.timeNow = function () {
+             return ((this.getHours() < 10)?"0":"") + this.getHours() +":"+ ((this.getMinutes() < 10)?"0":"") + this.getMinutes() +":"+ ((this.getSeconds() < 10)?"0":"") + this.getSeconds();
+        }
+
+        var newDate = new Date();
+        var datetime = newDate.timeNow();
+
+        if(datetime >= '10:00:00' && datetime <= '14:00:00'){
+          $('#onair').show();
+        }
+    </script>
 @stop
 

@@ -62,10 +62,10 @@
                     <li class="hidden">
                         <a href="/"></a>
                     </li>
-                    <li class="page-scroll visible-lg">
+                    <li class="page-scroll ">
                         <a href="/Home#about">Bio</a>
                     </li>
-                    <li class="page-scroll visible-lg">
+                    <li class="page-scroll">
                         <a href="/Home#download">Diva Pics</a>
                     </li>
                     <li class="page-scroll">
@@ -93,7 +93,13 @@
         <!-- /.container -->
     </nav>
     <!-- Button trigger modal -->
-
+    <div class="row">
+        <div class="col-md-1" id="onair">
+            <a href="http://www.iheart.com/live/103-Jamz-WOWI-2453/?callletters=wowi-fm&cid=%2Fonair%2Fdominique-da-diva-45166%2F&pname=1942&campid=play_bar&autoplay=true" target="blank">
+                <img src="img/onairbadge.png" height="250px">
+            </a>
+        </div>
+    </div>
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -103,8 +109,7 @@
         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
       <div class="modal-body">
-        ...
-      </div>
+        </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>

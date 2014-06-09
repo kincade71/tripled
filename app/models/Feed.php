@@ -143,7 +143,7 @@ class Feed{
 				$data[].= $videos['data'][$i]['std_res'];
 			}
 		$randomvideo = rand (0 ,$videocount-1);
-		$data = $data[2];
+		$data = $data[4];
 		}catch(Exception $e){
 
 		}

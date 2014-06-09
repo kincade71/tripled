@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="msapplication-TileColor" content="#610080">
@@ -42,8 +42,8 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<div class="container-fluid">
+    <nav class="navbar navbar-custom navbar-fixed-top col-sm-12" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
@@ -61,10 +61,10 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li class="page-scroll visible-lg">
+                    <li class="page-scroll ">
                         <a href="#about">Bio</a>
                     </li>
-                    <li class="page-scroll visible-lg">
+                    <li class="page-scrollghtyj574">
                         <a href="#download">Diva Pics</a>
                     </li>
                     <li class="page-scroll">
@@ -91,7 +91,13 @@
         </div>
         <!-- /.container -->
     </nav>
-
+    <div class="row">
+        <div class="col-md-1" id="onair">
+            <a href="http://www.iheart.com/live/103-Jamz-WOWI-2453/?callletters=wowi-fm&cid=%2Fonair%2Fdominique-da-diva-45166%2F&pname=1942&campid=play_bar&autoplay=true" target="blank">
+                <img src="img/onairbadge.png" height="250px">
+            </a>
+        </div>
+    </div>
     <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -110,9 +116,11 @@
     </div>
   </div>
 </div>  
+</div>
         @yield('content')
 
         @yield('footer')
+
     </body>
 
 </html>
