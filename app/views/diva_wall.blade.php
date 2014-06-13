@@ -76,7 +76,7 @@
             <li><a href="https://www.facebook.com/dominique.dadiva"><i class="fa fa-facebook fa-5x"></i></a></li>
         </ul>
         <hr/>
-        <p class="nostyle"><span>Hosting and event inquiries:</span><a href="mailto:email">email</a></p>
+        <p class="nostyle"><span>Hosting and event inquiries:</span><a href="mailto:dominiquedadiva@gmail.com">dominiquedadiva@gmail.com</a></p>
       </div>  
     </div>
   </div>
@@ -85,7 +85,7 @@
   <div class="row">
     <div class="col-lg-12 darken">
       <div class="col-md-6 pull-left ">
-        <p class="muted pull-left">Powered by <img src="img/jamedy.png" height="45"> Media Platform </p>
+        <p class="muted pull-left">Powered by <img src="img/jamedy.png" height="45"></p>
       </div>
       <div class="col-md-6 pull-right">
         <p class="muted pull-right">Designed by <a href="http://webdmg.com" style="font-weight:bold">WEBDMG</a></p>

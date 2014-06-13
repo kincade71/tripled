@@ -121,7 +121,7 @@ class Feed{
 	 */
 	public static function diva_images(){
 		try{
-			$response = file_get_contents('http://api.jamedy.com/images/instagram?user={"clrchnl_id":"45166","tw_id":"2547015841","ig_id":"1372585495"}');
+			$response = file_get_contents('http://api.jamedy.com/images/instagram?user={"clrchnl_id":"45166","tw_id":"2547015841","ig_id":"13540218"}');
 		}catch(Exception $e){
 
 		}
