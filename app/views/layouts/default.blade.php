@@ -84,7 +84,7 @@
                         {{link_to("/Events/",'Events')}}
                     </li>
                     <li class="page-scroll">
-                        <a href="/dddd" data-toggle="modal" data-target="#myModal">Diva Wall</a>
+                        <a href="javascript:void(0);" data-toggle="modal" data-target="#myModal">Become a Diva</a>
                     </li>
                 </ul>
             </div>
@@ -100,22 +100,63 @@
             </a>
         </div>
     </div>
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="color:#333">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel">Become a Diva</h4>
       </div>
       <div class="modal-body">
+        <div class="form-group">
+            <label for="exampleInputEmail1">First Name</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First Name">
         </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Last Name</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Last Name">
+        </div>
+        
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Phone Number</label>
+            <input type="number" class="form-control" id="exampleInputEmail1" placeholder="Number">
+        </div>
+        <div class="form-group">
+        <label for="exampleInputEmail1">Carrier</label>
+        <select class="form-control">
+          <option>Verizon</option>
+          <option>Sprint</option>
+          <option>T-Mobile</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Instagram Username</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Instagram Username">
+      </div>
+      <div class="form-group">
+          <label for="exampleInputEmail1">Twitter Handle</label>
+          <div class="input-group">
+              <span class="input-group-addon">@</span>
+              <input type="text" class="form-control" placeholder="Twitter Handle">
+          </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Facebook Username</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Facebook Username">
+      </div>
+
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
+</div>  
 </div>
         @yield('content')
 

@@ -24,9 +24,11 @@
     <section id="about" class="intro container content-section text-left about ">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-0 ">
+                <div class="col-sm-1 col-md-8 col-lg-12">
                     <h2>About <span class="dadiva " style="color:#610080;">Da Diva</span></h2>
-                    <p class="darken">Starting off as just an intern in 2008 at WBTJ-Richmond 106.5 THE BEAT, Dominique's spunky personality, passion for music & ability to entertain an audience immediately shined through. A native of Richmond, VA Dominique is a graduate of Virginia State University with a B.A in Mass Communications Radio/Television. She is also a lovely lady of Alpha Kappa Alpha Sorority, Incorporated. "Being a 'DIVA' is just an attitude. It's the way a young woman carries herself with respect, confidence and poise. Being a 'DIVA' is about knowing your worth and never settling for less. I think every woman should add 'da diva' to their name!" You can currently check her out right here on 103 JAMZ Monday-Saturday 10a-2p!</p>
+                    <p class="darken">From her humble beginnings at WBTJ-Richmond 106.5 THE BEAT, Dominique's charismatic personality, passion for music & ability to captivate an audience immediately shined through. A native of Richmond, VA Dominique is a graduate of Virginia State University with a B.A in Mass Communications Radio/Television. Joining the esteemed Alpha Kappa Alpha Sorority, Incorporated while at VSU gave her a renewed focus in the importance of teamwork and accountability in her own community.<br/><br/>
+Her favorite saying may be that "being a 'Diva' is just an attitude, but it's more than just a catchphrase. She models that quote after the way a young woman carries herself with respect, confidence and poise. She embodies her a "Diva" personality, making it less about singular success and more about knowing your worth and never settling for less. "Every woman should add DIVA to their name!"<br/><br/>  
+ You can currently catch her on air on WOWI- 103 JAMZ in through out the VA Beach area  Monday-Saturday 10a-2p!  & also in her hometown of  Richmond, VA during the weekend on WBTJ-106.5 THE BEAT. Catch her while you can! This diva has her focus on being the next multi-media queen!</p>
                 </div>
             </div>
         </div>
