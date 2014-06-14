@@ -107,6 +107,7 @@
         <h4 class="modal-title" id="myModalLabel">Become a Diva</h4>
       </div>
       <div class="modal-body">
+        <form action="http://api.jamedy.com/consumer/save" method="POST">
         <div class="form-group">
             <label for="exampleInputEmail1">First Name</label>
             <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First Name">
@@ -150,7 +151,8 @@
 
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <input type="submit" class="btn btn-primary" value="Save changes">
+    </form>
       </div>
     </div>
   </div>
