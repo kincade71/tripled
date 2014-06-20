@@ -1,23 +1,3 @@
-@section('content')
-     <section class="intro">
-        <div class="intro-body ">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-md-12">
-                        
-                    </div>
-                    <br><br><br>
-                    <div class="page-scroll">
-                        <a href="#totd" class="btn btn-circle">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-   
-@stop
 @section('footer')
 <section class="footer"><br/><br/>
 <div class="container">    
@@ -76,12 +56,12 @@
             <li><a href="https://www.facebook.com/dominique.dadiva"><i class="fa fa-facebook fa-5x"></i></a></li>
         </ul>
         <hr/>
-        <p class="nostyle"><span>Hosting and event inquiries:</span><br/><a href="mailto:dominiquedadiva@gmail.com">dominiquedadiva@gmail.com</a></p>
+        <p class="nostyle"><span>Hosting and event inquiries:</span><a href="mailto:dominiquedadiva@gmail.com">dominiquedadiva@gmail.com</a></p>
       </div>  
     </div>
   </div>
 </div>
-<hr>
+  <hr>
   <div class="row">
     <div class="col-lg-12 darken">
       <div class="col-md-6 pull-left ">
@@ -94,73 +74,4 @@
   </div>
 </div>
 </section>
-
-    <!-- Core JavaScript Files -->
-    {{ HTML::script('https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'); }}
-    {{ HTML::script('http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js'); }}
-    {{ HTML::script('http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'); }}
-
-    <!-- Custom Theme JavaScript -->
-    {{ HTML::script('js/grayscale.js'); }}
-    
-    <!-- slick -->
-    {{ HTML::script('slick/slick.min.js'); }}
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.Gallery').slick({
-
-  autoplay: true,
-  autoplaySpeed: 2000,
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true,
-        autoplay: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        autoplay: true
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true
-      }
-    }
-  ]
-            });
-        });
-    </script>
-    {{ HTML::script('lightbox/js/lightbox.min.js'); }}
-        <script type='text/javascript' async>
-      // For the time now
-        $('#onair').hide();
-        Date.prototype.timeNow = function () {
-             return ((this.getHours() < 10)?"0":"") + this.getHours() +":"+ ((this.getMinutes() < 10)?"0":"") + this.getMinutes() +":"+ ((this.getSeconds() < 10)?"0":"") + this.getSeconds();
-        }
-
-        var newDate = new Date();
-        var datetime = newDate.timeNow();
-
-        if(datetime >= '10:00:00' && datetime <= '14:00:00'){
-          $('#onair').show();
-        }
-    </script>
 @stop
-

@@ -128,7 +128,7 @@ Her favorite saying may be that "being a 'Diva' is just an attitude, but it's mo
             <li><a href="https://www.facebook.com/dominique.dadiva"><i class="fa fa-facebook fa-5x"></i></a></li>
         </ul>
         <hr/>
-          <p class="nostyle"><span>Hosting and event inquiries:</span><a href="mailto:dominiquedadiva@gmail.com">dominiquedadiva@gmail.com</a></p>
+          <p class="nostyle"><span>Hosting and event inquiries:</span><br/><a href="mailto:dominiquedadiva@gmail.com">dominiquedadiva@gmail.com</a></p>
       </div>  
     </div>
   </div>
