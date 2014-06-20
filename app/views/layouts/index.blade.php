@@ -110,24 +110,24 @@
         <form action="http://api.jamedy.com/consumer/save" method="POST">
         <div class="form-group">
             <label for="exampleInputEmail1">First Name</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First Name">
+            <input type="text" name="first_name" class="form-control" id="exampleInputEmail1" placeholder="First Name">
         </div>
         <div class="form-group">
             <label for="exampleInputEmail1">Last Name</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Last Name">
+            <input type="text" name="last_name" class="form-control" id="exampleInputEmail1" placeholder="Last Name">
         </div>
         
         <div class="form-group">
             <label for="exampleInputEmail1">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
         </div>
         <div class="form-group">
             <label for="exampleInputEmail1">Phone Number</label>
-            <input type="number" class="form-control" id="exampleInputEmail1" placeholder="Number">
+            <input type="number" name="phone_number" class="form-control" id="exampleInputEmail1" placeholder="Number">
         </div>
         <div class="form-group">
         <label for="exampleInputEmail1">Carrier</label>
-        <select class="form-control">
+        <select name="phone_carrier" class="form-control">
           <option>Verizon</option>
           <option>Sprint</option>
           <option>T-Mobile</option>
@@ -135,18 +135,18 @@
       </div>
       <div class="form-group">
         <label for="exampleInputEmail1">Instagram Username</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Instagram Username">
+        <input type="text" name="ig_handle" class="form-control" id="exampleInputEmail1" placeholder="Instagram Username">
       </div>
       <div class="form-group">
           <label for="exampleInputEmail1">Twitter Handle</label>
           <div class="input-group">
               <span class="input-group-addon">@</span>
-              <input type="text" class="form-control" placeholder="Twitter Handle">
+              <input type="text" name="tw_handle" class="form-control" placeholder="Twitter Handle">
           </div>
       </div>
       <div class="form-group">
         <label for="exampleInputEmail1">Facebook Username</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Facebook Username">
+        <input type="text" name="fb_handle" class="form-control" id="exampleInputEmail1" placeholder="Facebook Username">
       </div>
 
       <div class="modal-footer">
